@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import logo from "./search_logo.svg";
 
 export default function Dictionary() {
   const [word, setWord] = useState("");
@@ -30,7 +31,7 @@ export default function Dictionary() {
       <div className="dict-body mt-5">
         <form onSubmit={handleSubmit}>
           <div className="row d-flex justify-content-center">
-            <div className="col-5 d-none d-lg-block">
+            <div className="col-7 d-none d-lg-block">
               <input
                 type="text"
                 name="search"
@@ -74,6 +75,18 @@ export default function Dictionary() {
             </div>
           </div>
         </form>
+        <div className="wait-block mb-5">
+          <figure>
+            <img
+              src={logo}
+              alt="Searching..."
+              className="col-4 mx-auto img-fluid mt-5"
+            />
+            <figcaption className="monospace mt-3 op-8 mb-5">
+              Waiting for word submission...
+            </figcaption>
+          </figure>
+        </div>
       </div>
     );
   } else {
@@ -81,7 +94,7 @@ export default function Dictionary() {
       <div className="dict-body mt-5">
         <form onSubmit={handleSubmit}>
           <div className="row d-flex justify-content-center">
-            <div className="col-5 d-none d-lg-block">
+            <div className="col-7 d-none d-lg-block">
               <input
                 type="text"
                 name="search"
