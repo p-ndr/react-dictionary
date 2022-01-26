@@ -15,6 +15,14 @@
   font-family: "Dancing Script", cursive;
 }
 
+.monospace {
+  font-family: monospace;
+}
+
+.op-8 {
+  opacity: 0.8;
+}
+
 .intro {
   font-size: 16px;
   font-family: monospace;
@@ -66,12 +74,14 @@
   border-radius: 5px;
 }
 
-.part-of-speech {
+.part-of-speech,
+.origin-title {
   font-weight: bold;
   font-size: 22px;
 }
 
-.definition {
+.definition,
+.origin {
   font-size: 16px;
 }
 
@@ -90,7 +100,14 @@
 .antonyms li {
   list-style: none;
   display: inline-block;
-  margin-right: 10px;
   font-size: 14px;
   justify-content: space-evenly;
+}
+
+.origin-box {
+  width: 100%;
+  color: #000;
+  background: #e0e0e0;
+  border-radius: 5px;
+  text-align: left;
 }
