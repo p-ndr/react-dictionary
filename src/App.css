@@ -15,6 +15,12 @@
   font-family: "Dancing Script", cursive;
 }
 
+.intro {
+  font-size: 16px;
+  font-family: monospace;
+  opacity: 0.8;
+}
+
 .search-bar,
 .search-bar-md,
 .search-bar-sm {
@@ -23,6 +29,7 @@
   border-radius: 30px;
   height: 45px;
   padding: 15px;
+  background: #f2f2f2;
 }
 
 .search-button,
@@ -42,4 +49,33 @@
   cursor: pointer;
   color: #fff;
   background-color: #7a72fe;
+}
+
+.meanings {
+  width: 100%;
+  color: #000;
+  /* background: #e0e0e0; */
+  text-align: left;
+  border-radius: 5px;
+}
+
+.meaning {
+  width: 100%;
+  color: #000;
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+.part-of-speech {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.definition {
+  font-size: 16px;
+}
+
+.example {
+  font-size: 14px;
+  opacity: 0.8;
 }
