@@ -79,3 +79,18 @@
   font-size: 14px;
   opacity: 0.8;
 }
+
+.synonyms,
+.antonyms {
+  margin: 0px;
+  /* padding: 0px; */
+}
+
+.synonyms li,
+.antonyms li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+  justify-content: space-evenly;
+}

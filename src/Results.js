@@ -6,16 +6,15 @@ export default function Results(props) {
   //const origin = props.data[0]["origin"]
 
   //order: phonetics definition origin
-  //console.log(meanings);
   return (
     <div className="container-fluid">
       <div className="results">
         <div className="row">
-          <div className="col-6 mx-auto text-left">
+          <div className="col-9 mx-auto text-left">
             <div className="meanings d-flex flex-column">
               {meanings.map((meaning, index) => {
                 return (
-                  <div className="py-2">
+                  <div className="py-1" key={index}>
                     <Meaning def={meaning} key={index} />
                   </div>
                 );
