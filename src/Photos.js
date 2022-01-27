@@ -1,15 +1,20 @@
 export default function Photos(props) {
-  return (
-    <div className="row">
-      <div className="photos">
+  if (props.data) {
+    return (
+      <div className="row photos d-flex flex-row justify-content evenly mx-auto">
         {props.data.map((photo, index) => {
           return (
-            <div className="col-2" key={index}>
-              <img src={photo.url} alt="result" className="img-fluid" />
+            <div className="col-3 p-4" key={index}>
+              <img
+                src={photo.src.small}
+                alt="result"
+                className="img-fluid picture"
+              />
             </div>
           );
         })}
       </div>
-    </div>
-  );
+    );
+  }
+  return null;
 }
