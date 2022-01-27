@@ -1,5 +1,6 @@
 import Meaning from "./Meaning";
 import Origin from "./Origin";
+import Phonetics from "./Phonetics";
 
 export default function Results(props) {
   const meanings = props.data[0]["meanings"];
@@ -11,7 +12,9 @@ export default function Results(props) {
     <div className="container-fluid">
       <div className="results">
         <div className="row">
-          <div className="col-10 mx-auto text-left"></div>
+          <div className="col-10 mx-auto text-left py-2">
+            <Phonetics data={phonetics} />
+          </div>
         </div>
         <div className="row">
           <div className="col-10 mx-auto text-left">
