@@ -1,11 +1,13 @@
 import Meaning from "./Meaning";
 import Origin from "./Origin";
 import Phonetics from "./Phonetics";
+import Photos from "./Photos";
 
 export default function Results(props) {
   const meanings = props.data[0]["meanings"];
   const phonetics = props.data[0]["phonetics"];
   const origin = props.data[0]["origin"];
+  const photos = props.pix;
 
   //order: phonetics definition origin
   return (
@@ -32,6 +34,11 @@ export default function Results(props) {
         <div className="row">
           <div className="col-10 mx-auto text-left py-2">
             <Origin data={origin} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-10 mx-auto py-2">
+            <Photos data={photos} />
           </div>
         </div>
       </div>
