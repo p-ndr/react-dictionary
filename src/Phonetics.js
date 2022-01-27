@@ -14,7 +14,7 @@ export default function Phonetics(props) {
                       sound.play();
                     }}
                   >
-                    <i class="fas fa-volume-up"></i>
+                    <i className="fas fa-volume-up"></i>
                   </button>
                   &emsp;
                   <span className="phonetics-text">/{phonetic.text}/</span>
@@ -26,7 +26,7 @@ export default function Phonetics(props) {
               <div>
                 <div key={index} className="p-2">
                   <button className="audio-button">
-                    <i class="fas fa-volume-mute"></i>
+                    <i className="fas fa-volume-mute"></i>
                   </button>
                   &emsp;
                   <span className="phonetics-text">/{phonetic.text}/</span>
