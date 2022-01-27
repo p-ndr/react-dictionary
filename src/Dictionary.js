@@ -7,6 +7,7 @@ export default function Dictionary() {
   const [word, setWord] = useState("");
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [result, setResult] = useState(null);
+  const [photoData, setPhotoData] = useState(null);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -15,7 +16,14 @@ export default function Dictionary() {
       setResult(response.data);
       setIsDataLoaded(true);
     });
-    //alert(word);
+
+    let pexelsAPIKey =
+      "563492ad6f91700001000001f62bf6e6a17546abb8450d9c1ac326cb";
+    let pexelsAPIUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=4`;
+    let headers = { Authorization: `Bearer ${pexelsAPIKey}` };
+    axios.get(pexelsAPIUrl, { headers: headers }).then((response) => {
+      setPhotoData(response.data.photos);
+    });
   }
 
   useEffect(() => {
@@ -139,7 +147,7 @@ export default function Dictionary() {
           </div>
         </form>
         <div className="row my-5">
-          <Results data={result} />
+          <Results data={result} pix={photoData} />
         </div>
       </div>
     );
