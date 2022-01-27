@@ -5,8 +5,8 @@ export default function Phonetics(props) {
         {props.data.map((phonetic, index) => {
           if ("audio" in phonetic) {
             return (
-              <div>
-                <div key={index} className="p-2">
+              <div key={index}>
+                <div className="p-2">
                   <button
                     className="audio-button"
                     onClick={() => {
@@ -14,7 +14,7 @@ export default function Phonetics(props) {
                       sound.play();
                     }}
                   >
-                    <i class="fas fa-volume-up"></i>
+                    <i className="fas fa-volume-up"></i>
                   </button>
                   &emsp;
                   <span className="phonetics-text">/{phonetic.text}/</span>
@@ -23,10 +23,10 @@ export default function Phonetics(props) {
             );
           } else {
             return (
-              <div>
-                <div key={index} className="p-2">
+              <div key={index}>
+                <div className="p-2">
                   <button className="audio-button">
-                    <i class="fas fa-volume-mute"></i>
+                    <i className="fas fa-volume-mute"></i>
                   </button>
                   &emsp;
                   <span className="phonetics-text">/{phonetic.text}/</span>
