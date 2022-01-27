@@ -6,6 +6,7 @@ export default function Results(props) {
   const meanings = props.data[0]["meanings"];
   const phonetics = props.data[0]["phonetics"];
   const origin = props.data[0]["origin"];
+
   //order: phonetics definition origin
   return (
     <div className="container-fluid">
