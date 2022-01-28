@@ -56,6 +56,7 @@ export default function Dictionary() {
                 type="text"
                 name="search"
                 placeholder="Type a word..."
+                onChange={updateWord}
                 className="search-bar-md"
               />
             </div>
@@ -71,6 +72,7 @@ export default function Dictionary() {
                 type="text"
                 name="search"
                 placeholder="Type a word..."
+                onChange={updateWord}
                 className="search-bar-sm"
               />
             </div>
@@ -119,6 +121,7 @@ export default function Dictionary() {
                 type="text"
                 name="search"
                 placeholder="Type a word..."
+                onChange={updateWord}
                 className="search-bar-md"
               />
             </div>
@@ -135,6 +138,7 @@ export default function Dictionary() {
                 name="search"
                 placeholder="Type a word..."
                 className="search-bar-sm"
+                onChange={updateWord}
               />
             </div>
             <div className="col-3 d-md-none">
