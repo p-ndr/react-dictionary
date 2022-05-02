@@ -11,7 +11,7 @@ function App() {
         </header>
         <div className="App-name mt-2 mx-auto handwriting">Mond Dictionary</div>
         <div className="intro mt-2 mx-auto monospace">
-          Let there be light upon the darkness
+          See the Moon and Not the Sun
         </div>
         <Dictionary />
       </div>

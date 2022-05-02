@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import logo from "./search_logo.svg";
+import DeveloperInfo from "./DeveloperInfo";
 
 export default function Dictionary() {
   const [word, setWord] = useState("");
@@ -86,17 +87,18 @@ export default function Dictionary() {
           </div>
         </form>
         <div className="wait-block mb-5">
-          <figure>
+          <figure className="mb-5">
             <img
               src={logo}
               alt="Searching..."
-              className="col-4 mx-auto img-fluid mt-5"
+              className="col-3 mx-auto img-fluid mt-5"
             />
             <figcaption className="monospace mt-3 op-8 mb-5">
               Waiting for word submission...
             </figcaption>
           </figure>
         </div>
+        <DeveloperInfo />
       </div>
     );
   } else {
@@ -153,6 +155,7 @@ export default function Dictionary() {
         <div className="row my-5">
           <Results data={result} pix={photoData} />
         </div>
+        <DeveloperInfo />
       </div>
     );
   }

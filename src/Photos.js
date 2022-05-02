@@ -4,7 +4,7 @@ export default function Photos(props) {
       <div className="row photos d-flex flex-row justify-content evenly mx-auto">
         {props.data.map((photo, index) => {
           return (
-            <div className="col-3 p-4" key={index}>
+            <div className="col-3 p-2" key={index}>
               <img
                 src={photo.src.small}
                 alt="result"
