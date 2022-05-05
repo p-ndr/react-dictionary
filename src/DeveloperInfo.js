@@ -21,15 +21,17 @@ export default function DeveloperInfo() {
         </a>
       </div>
       <div className="col-6">
-        Illustrations by{" "}
-        <a
-          href="https://undraw.co/illustrations"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="links"
-        >
-          undraw
-        </a>
+        <div className="ms-5 ps-5 text-center">
+          Illustrations by{" "}
+          <a
+            href="https://undraw.co/illustrations"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="links"
+          >
+            undraw
+          </a>
+        </div>
       </div>
     </div>
   );
