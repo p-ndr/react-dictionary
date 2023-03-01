@@ -1,6 +1,7 @@
 # Dictionary Project
 
-Mond dictionary version 0.1.0, developed for [Shecodes React workshop](https://www.shecodes.io/react).
+Mond dictionary version 0.1.0, developed for [Shecodes React workshop](https://www.shecodes.io/react). 
+Link: mond-dictionary.netlify.app
 
 <!-- ## Available Scripts
 
